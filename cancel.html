@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Cancelled — Engraved.mt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #0d0c0a; --cream: #f7f4ee; --gold: #b8924a;
+            --muted: rgba(13,12,10,0.45); --border: rgba(13,12,10,0.12);
+            --serif: 'Cormorant Garamond', serif; --sans: 'DM Sans', sans-serif; --mono: 'DM Mono', monospace;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: var(--cream); color: var(--ink); font-family: var(--sans); min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 24px; -webkit-font-smoothing: antialiased; }
+        .card { max-width: 480px; width: 100%; background: white; border: 1px solid var(--border); padding: 60px 48px; text-align: center; }
+        .icon { font-size: 2.5rem; margin-bottom: 24px; opacity: 0.4; }
+        .eyebrow { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+        h1 { font-family: var(--serif); font-size: 2rem; font-weight: 300; margin-bottom: 16px; line-height: 1.2; }
+        p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; font-weight: 300; }
+        .btn-return {
+            display: inline-block; margin-top: 36px;
+            background: var(--ink); color: #f7f4ee;
+            padding: 16px 40px; text-decoration: none;
+            font-size: 0.78rem; font-weight: 600;
+            letter-spacing: 2px; text-transform: uppercase;
+            transition: background 0.3s ease;
+        }
+        .btn-return:hover { background: var(--gold); color: var(--ink); }
+        @media (max-width: 480px) { .card { padding: 40px 24px; } }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="icon">↩</div>
+        <p class="eyebrow">No worries</p>
+        <h1>Payment cancelled</h1>
+        <p>Nothing was charged. Your bag is still waiting — head back and complete your order whenever you're ready.</p>
+        <a href="index.html" class="btn-return">Return to the Shop</a>
+    </div>
+</body>
+</html>

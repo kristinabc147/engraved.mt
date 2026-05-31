@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed — Engraved.mt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #0d0c0a; --cream: #f7f4ee; --gold: #b8924a; --gold-pale: #d4b07a;
+            --char: #1a1815; --muted: rgba(13,12,10,0.45); --border: rgba(13,12,10,0.12);
+            --serif: 'Cormorant Garamond', serif; --sans: 'DM Sans', sans-serif; --mono: 'DM Mono', monospace;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: var(--cream); color: var(--ink); font-family: var(--sans); min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 24px; -webkit-font-smoothing: antialiased; }
+        .card {
+            max-width: 540px; width: 100%;
+            background: white;
+            border: 1px solid var(--border);
+            padding: 60px 48px;
+            text-align: center;
+        }
+        .check-circle {
+            width: 64px; height: 64px; border-radius: 50%;
+            background: var(--gold); color: white;
+            font-size: 1.8rem; display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 28px;
+        }
+        .eyebrow {
+            font-family: var(--mono); font-size: 0.68rem; letter-spacing: 2px;
+            text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
+        }
+        h1 { font-family: var(--serif); font-size: 2.2rem; font-weight: 300; margin-bottom: 16px; line-height: 1.2; }
+        h1 em { font-style: italic; }
+        p { font-size: 0.92rem; color: var(--muted); line-height: 1.7; font-weight: 300; margin-bottom: 12px; }
+        .divider { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+        .next-steps { text-align: left; }
+        .next-steps h2 { font-family: var(--serif); font-size: 1.2rem; font-weight: 400; margin-bottom: 16px; }
+        .step { display: flex; gap: 14px; margin-bottom: 14px; align-items: flex-start; }
+        .step-num {
+            font-family: var(--mono); font-size: 0.65rem; letter-spacing: 1px;
+            background: var(--ink); color: var(--cream);
+            padding: 3px 8px; flex-shrink: 0; margin-top: 2px;
+        }
+        .step-text { font-size: 0.85rem; color: var(--muted); line-height: 1.55; font-weight: 300; }
+        .step-text strong { color: var(--ink); font-weight: 500; }
+        .fb-link {
+            display: flex; align-items: center; gap: 10px; justify-content: center;
+            margin-top: 32px; padding: 14px 24px;
+            background: #1877F2; color: white;
+            text-decoration: none; font-size: 0.82rem; font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: background 0.2s ease;
+        }
+        .fb-link:hover { background: #1464d8; }
+        .back-link {
+            display: inline-block; margin-top: 20px;
+            font-family: var(--mono); font-size: 0.68rem;
+            letter-spacing: 1.5px; text-transform: uppercase;
+            color: var(--muted); text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .back-link:hover { color: var(--ink); }
+        @media (max-width: 480px) { .card { padding: 40px 24px; } }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="check-circle">✓</div>
+        <p class="eyebrow">Order Confirmed</p>
+        <h1>Thank you — your order<br>is <em>in our hands.</em></h1>
+        <p>Payment received. You'll get a Stripe receipt in your email shortly. We'll begin engraving within 1 business day.</p>
+
+        <hr class="divider">
+
+        <div class="next-steps">
+            <h2>What happens next</h2>
+            <div class="step">
+                <span class="step-num">01</span>
+                <p class="step-text"><strong>Check your email</strong> for your payment receipt from Stripe.</p>
+            </div>
+            <div class="step">
+                <span class="step-num">02</span>
+                <p class="step-text"><strong>If you ordered a photo engraving</strong> (wood slice or mug), please send us your photo on Facebook Messenger — we need it to begin.</p>
+            </div>
+            <div class="step">
+                <span class="step-num">03</span>
+                <p class="step-text"><strong>We'll message you</strong> when your piece is ready — usually within 2–3 days.</p>
+            </div>
+            <div class="step">
+                <span class="step-num">04</span>
+                <p class="step-text"><strong>Collect from our studio</strong> or wait for your Malta courier delivery.</p>
+            </div>
+        </div>
+
+        <a href="https://www.facebook.com/messages/engravedmt" target="_blank" class="fb-link">
+            📷 &nbsp; Send us your photo on Facebook Messenger
+        </a>
+        <br>
+        <a href="index.html" class="back-link">← Back to the shop</a>
+    </div>
+</body>
+</html>

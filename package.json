@@ -1,0 +1,8 @@
+{
+  "name": "engraved-mt",
+  "version": "1.0.0",
+  "description": "Engraved.mt – Netlify Functions",
+  "dependencies": {
+    "stripe": "^14.0.0"
+  }
+}
